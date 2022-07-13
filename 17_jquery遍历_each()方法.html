@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.min.js"></script>
+    
+</head>
+<body>
+    <div>111</div>
+    <div>222</div>
+    <div>333</div>
+    <script>
+        // 需求一，将div变成红色
+        $('div').css('color','red')
+
+        // 需求二，将div分布设置为红色、绿色、蓝色,用到遍历
+
+        // 简单遍历格式：JQ对象.each(匿名函数)   对元素的操作写在匿名函数中
+        $('div').each(function(){
+            console.log(this);
+        })
+        var array = ['red','green','blue']
+        // 完整遍历格式：JQ对象.each(匿名函数(i,e))
+        $('div').each(function(i,e){
+            $(e).css('color',array[i]);
+        })
+    </script>
+</body>
+</html>
