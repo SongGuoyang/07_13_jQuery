@@ -9,14 +9,20 @@
     
 </head>
 <body>
-    <ul></ul>
-    <hr>
+    <div>
+        <span>中国移动</span>
+    </div>
+    <input type="text">
     <script>
-        var li = $('<li>这个</li><li>这个</li><li>这个</li>')
-        // 添加li到ul中
-        $('ul').append(li)
-        // 删除hr元素
-        $('hr').remove()
+        // 操作元素标签
+        console.log($('div').html());
+        $('div').html('<h1>中国联通</h1>')
+        // 操作元素纯文本，不包括样式
+        console.log($('div').text());
+        $('div').text('<h1>中国电信</h1>')
+
+        $('input').val('张三')
+        alert($('input').val())
     </script>
 </body>
 </html>
