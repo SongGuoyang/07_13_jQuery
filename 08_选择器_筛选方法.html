@@ -22,13 +22,13 @@
     </ul>
     <script>
         // 选择ol下的第一个
-        $("ol li:eq(0)").css('color','red')
-        // 选择ul下的第三个
-        $("ol li:eq(2)").css('color','green')
-        // 选择ul下的奇数索引
-        $("ul li:odd").css('color','blue')
-        // 选择ol下的偶数索引
-        $("ul li:even").css('color','pink')
+        $("ol li").first().css('color','red')
+        // 选择ol下的第二个
+        $("ol li").eq(2).css('color','green')
+        // 选择ol下的最后个
+        $("ol li").last().css('color','green')
+        // 选择ul下除了索引为3的
+        $("ul li").eq(3).siblings().css('color','blue')
     </script>
 </body>
 </html>
