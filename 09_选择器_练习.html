@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.min.js"></script>
+</head>
+<body>
+    <button id = 'b1'>asd</button>
+    <button id = 'b2'>asd</button>
+    <button id = 'b3'>asd</button>
+    <button id = 'b4'>asd</button>
+    <button id = 'b5'>asd</button>
+    <button id = 'b6'>asd</button>
+    <script>
+        $('button').click(function(){
+            $(this).css('background','red')
+            $(this).siblings().css('background','')
+        })
+    </script>
+</body>
+</html>
