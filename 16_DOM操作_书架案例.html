@@ -15,7 +15,9 @@
 			var ba = $('#bookauthor').val()
 			var bp = $('#bookprice').val()
 			var bs = $('#booksale').val()
-			alert('这本书名为《'+bn+'》，'+ba+'编写的书，'+'原价为'+bp+'，折扣为'+bs+'，折扣价为'+bp*bs+'元')
+			// alert('这本书名为《'+bn+'》，'+ba+'编写的书，'+'原价为'+bp+'，折扣为'+bs+'，折扣价为'+bp*bs+'元')
+			// 使用es6的新特性，模板字符串
+			alert(`这本书名为<<${bn}>>,${ba}编著的书，折扣为:${bs}折，折扣后价格为:${bp*bs}`)
         })
 
 	 });
