@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.js"></script>
+</head>
+<body>
+    <div id = 'd1'>nihao</div>
+    <div id = 'd2'>nihao</div>
+    <script>
+        // 原生的js对象
+        var d1 = document.querySelector('#d1')
+        console.log(d1);
+        // jQuery对象
+        var d2 = $('#d2')
+        console.log(d2);
+
+        // DOM-->JQ
+        $(d1).hide(2000)
+        // JQ-->DOM
+        console.log(d2[0]);
+        console.log(d2.get(0));
+        d2[0].style.display = 'none'
+    </script>
+</body>
+</html>
