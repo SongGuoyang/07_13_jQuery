@@ -14,9 +14,14 @@
     </style>
 	<script>
         //需求：点击qq表情，将其追加到发言框中
+        // 将jquery写在body前面，可以在页面加载完成后调用匿名函数的代码
         $(function () {
-            
-
+            // 获取标签，添加点击事件
+            $('img').click(function(){
+                // 将当前标签添加到P元素后面
+                $('.word').append($(this).clone())
+                $('.word').append(" ")
+            })
         });
 
     </script>
