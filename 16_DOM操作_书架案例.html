@@ -11,14 +11,15 @@
 	 */
 	 $(function () {
         $('#totalBtn').click(function(){
+			var bn = $('#bookname').val()
+			var ba = $('#bookauthor').val()
 			var bp = $('#bookprice').val()
 			var bs = $('#booksale').val()
-			alert('折扣价为'+ bp*bs)
+			alert('这本书名为《'+bn+'》，'+ba+'编写的书，'+'原价为'+bp+'，折扣为'+bs+'，折扣价为'+bp*bs+'元')
         })
 
 	 });
 	</script>
-
 </head>
 <body>
 书名：<input type="text" id="bookname" name="bookname"  ><br/>
@@ -26,13 +27,5 @@
 价格：<input type="text" id="bookprice" name="bookprice" ><br/>
 折扣：<input type="text" id="booksale" name="booksale" ><br/>
 <input type="button" id="totalBtn" value="计算折扣价">
-<script>
-	$('#bookname').val('《abc》')
-	$('#bookauthor').val('zhangsan')
-	$('#bookprice').val(120)
-	$('#booksale').val(0.8)
-</script>
-
-
 </body>
 </html>
