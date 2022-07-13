@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./jquery.min.js"></script>
+    
+</head>
+<body>
+    <a href="http://www.baidu.com">baidu</a>
+    <!-- href 是固有的属性 -->
+    <div index = '1'>sksks</div>
+    <!-- index 是用户自定义的属性 -->
+    <script>
+        // prop 一般用于操作元素固有的属性
+        console.log($('a').prop('href'));
+        console.log($('div').prop('index'));
+        // attr 一般用于操作元素自定义的属性
+        console.log($('a').attr('href'));
+        console.log($('div').attr('index'));
+    </script>
+</body>
+</html>
