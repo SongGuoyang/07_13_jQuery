@@ -13,6 +13,8 @@
     <!-- href 是固有的属性 -->
     <div index = '1'>sksks</div>
     <!-- index 是用户自定义的属性 -->
+    <input type="checkbox">确认介绍服务条款
+        
     <script>
         // prop 一般用于操作元素固有的属性
         console.log($('a').prop('href'));
@@ -23,6 +25,7 @@
 
         // 修改元素属性
         $('a').prop('href','http://www.bing.com')
+        $('input').prop('checked',true)
     </script>
 </body>
 </html>
